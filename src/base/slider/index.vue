@@ -46,7 +46,6 @@ export default {
         this._play()
       }
     }, 20)
-
     window.addEventListener('resize', () => {
       if (!this.slider || !this.slider.enabled) {
         return
@@ -155,9 +154,9 @@ export default {
   @import "~common/stylus/variable"
 
   .slider
+    position: relative
     min-height: 1px
     .slider-group
-      position: relative
       overflow: hidden
       white-space: nowrap
       .slider-item
@@ -167,7 +166,7 @@ export default {
         text-align: center
         a
           display: block
-          width: 100%
+          width: 100% !important
           overflow: hidden
           text-decoration: none
         img
