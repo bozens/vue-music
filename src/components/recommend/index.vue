@@ -3,7 +3,7 @@
   <div class="recommend-content">
     <div class="silder-wrapper">
       <Slider>
-        <div class="" v-for="item in slideList">
+        <div v-for="item in slideList" :key="item">
           <a :href="item.linkUrl">
             <img :src="item.picUrl" alt="">
           </a>
